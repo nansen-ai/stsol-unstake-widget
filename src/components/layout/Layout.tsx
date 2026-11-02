@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Header from './Header';
 import { PropsWithChildren } from 'react';
+import { Link } from '@lidofinance/lido-ui';
 
 const Content = styled.div`
   display: flex;
@@ -18,14 +19,14 @@ const LayoutTitleStyle = styled.h1`
   font-size: 26px;
   line-height: 38px;
   font-weight: 800;
-  color: #273852;
+  color: #00FFA7;
   margin-bottom: 4px;
 `;
 
 const LayoutSubTitleStyle = styled.h4`
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
-  color: #7a8aa0;
+  color: #FFFFFF;
   margin-bottom: 16px;
 `;
 
@@ -41,9 +42,10 @@ export default function Layout({ children, title, subtitle }: PropsWithChildren<
       <Header />
       <Content>
         <LayoutTitleStyle>{title}</LayoutTitleStyle>
-        <LayoutSubTitleStyle>{subtitle}</LayoutSubTitleStyle>
+        <LayoutSubTitleStyle>Unstake stSOL and withdraw/restake SOL with <b>Nansen's 0%</b> commission validator to earn <b>NSN points</b> - check your restaked SOL positions at <Link href="https://stake.nansen.ai">Nansen Staking Hub</Link></LayoutSubTitleStyle>
         {children}
       </Content>
     </>
   );
 }
+
