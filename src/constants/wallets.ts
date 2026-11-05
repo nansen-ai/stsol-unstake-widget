@@ -5,20 +5,11 @@ import {
   createDefaultWalletNotFoundHandler,
 } from '@solana-mobile/wallet-adapter-mobile';
 import { BaseWalletAdapter, WalletName } from '@solana/wallet-adapter-base';
-import {
-  BraveWalletAdapter,
-  Coin98WalletAdapter,
-  CoinbaseWalletAdapter,
-  ExodusWalletAdapter,
-  LedgerWalletAdapter,
-  MathWalletAdapter,
-  PhantomWalletAdapter,
-  SlopeWalletAdapter,
-  SolflareWalletAdapter,
-  SolongWalletAdapter,
-  TrustWalletAdapter,
-  WalletConnectWalletAdapter,
-} from '@solana/wallet-adapter-wallets';
+import { CoinbaseWalletAdapter } from '@solana/wallet-adapter-coinbase';
+import { LedgerWalletAdapter } from '@solana/wallet-adapter-ledger';
+import { PhantomWalletAdapter } from '@solana/wallet-adapter-phantom';
+import { TrustWalletAdapter } from '@solana/wallet-adapter-trust';
+import { WalletConnectWalletAdapter } from '@solana/wallet-adapter-walletconnect';
 import { ElementType } from 'react';
 
 import LedgerIcon from '@/assets/icons/wallets/ledger.svg?react';

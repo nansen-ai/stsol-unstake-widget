@@ -1,4 +1,4 @@
-import { getDerivationPath } from '@solana/wallet-adapter-wallets';
+import { getDerivationPath } from '@solana/wallet-adapter-ledger';
 
 export type DerivationPath = [] | [number] | [number, number];
 
