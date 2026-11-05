@@ -14,7 +14,7 @@
     "@ledgerhq/hw-transport-webhid": "^6.27.16",
     "@lidofinance/lido-ui": "^3.7.2",
     "@lidofinance/solido-sdk": "0.12.0",
-    "@solana-mobile/wallet-adapter-mobile": "^2.0.1",
+    "@solana-mobile/wallet-adapter-mobile": "^2.2.0",
     "@solana/buffer-layout": "4.0.0",
     "@solana/spl-token": "0.2.0",
     "@solana/wallet-adapter-base": "^0.9.28",
