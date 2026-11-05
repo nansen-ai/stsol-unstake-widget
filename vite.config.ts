@@ -5,7 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
+  const env = loadEnv(mode, process.cwd(), 'BASE');
 
   return {
     plugins: [react(), tsconfigPaths(), svgrPlugin(), nodePolyfills()],
