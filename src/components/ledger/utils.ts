@@ -1,7 +1,7 @@
 import type Transport from '@ledgerhq/hw-transport';
 import type TransportWebHID from '@ledgerhq/hw-transport-webhid';
 import { WalletConnectionError, WalletLoadError } from '@solana/wallet-adapter-base';
-import { getDerivationPath } from '@solana/wallet-adapter-wallets';
+import { getDerivationPath } from '@solana/wallet-adapter-ledger';
 import { PublicKey } from '@solana/web3.js';
 import { DerivationPath, GeneratePathsParams } from './types';
 

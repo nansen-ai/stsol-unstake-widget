@@ -1,5 +1,5 @@
 # Build stage
-FROM node:18.19.0-alpine AS build
+FROM node:22.23.4-alpine AS build
 
 RUN apk add --no-cache python3 make g++
 

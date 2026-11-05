@@ -14,13 +14,17 @@
     "@ledgerhq/hw-transport-webhid": "^6.27.16",
     "@lidofinance/lido-ui": "^3.7.2",
     "@lidofinance/solido-sdk": "0.12.0",
-    "@solana-mobile/wallet-adapter-mobile": "^2.0.1",
+    "@solana-mobile/wallet-adapter-mobile": "^2.2.0",
     "@solana/buffer-layout": "4.0.0",
     "@solana/spl-token": "0.2.0",
-    "@solana/wallet-adapter-base": "^0.9.22",
-    "@solana/wallet-adapter-react": "^0.15.33",
-    "@solana/wallet-adapter-wallets": "^0.19.19",
-    "@solana/web3.js": "1.58.0",
+    "@solana/wallet-adapter-base": "^0.9.28",
+    "@solana/wallet-adapter-coinbase": "^0.1.24",
+    "@solana/wallet-adapter-ledger": "^0.9.30",
+    "@solana/wallet-adapter-phantom": "^0.9.30",
+    "@solana/wallet-adapter-react": "^0.15.40",
+    "@solana/wallet-adapter-trust": "^0.1.18",
+    "@solana/wallet-adapter-walletconnect": "0.1.17",
+    "@solana/web3.js": "1.99.0",
     "bn.js": "^5.2.0",
     "formik": "^2.2.6",
     "react": "^17.0.2",
@@ -57,7 +61,7 @@
     "lint-staged": "^13.1.0",
     "prettier": "^2.6.2",
     "vite": "^4.5.0",
-    "vite-plugin-node-polyfills": "^0.19.0",
+    "vite-plugin-node-polyfills": "^0.28.0",
     "vite-plugin-svgr": "^4.1.0",
     "vite-tsconfig-paths": "^4.2.1"
   },
@@ -66,6 +70,12 @@
     "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "volta": {
-    "node": "18.19.0"
+    "node": "22.23.4"
+  },
+  "resolutions": {
+    "**/wait-on/axios": "^0.34.0",
+    "**/@walletconnect/sign-client": "2.21.8",
+    "**/@walletconnect/utils": "2.21.8",
+    "**/viem/ws": "^8.21.0"
   }
 }
