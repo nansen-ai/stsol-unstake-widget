@@ -70,7 +70,7 @@
     "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "volta": {
-    "node": "18.19.0"
+    "node": "22.23.4"
   },
   "resolutions": {
     "**/wait-on/axios": "^0.34.0"
